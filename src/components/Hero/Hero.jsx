@@ -7,7 +7,7 @@ import BgPng from "../../assets/bg.jpg";
 import AboutPng from "../../assets/About.jpg";
 import { motion } from "framer-motion";
 
-// Your corrected FadeUp function
+
 export const FadeUp = (delay) => {
   return {
     initial: {
@@ -21,7 +21,7 @@ export const FadeUp = (delay) => {
         type: "spring",
         stiffness: 100,
         duration: 0.5,
-        delay: delay,  // Now delay is passed correctly
+        delay: delay, 
         ease: "easeInOut",
       }
     }
@@ -29,22 +29,20 @@ export const FadeUp = (delay) => {
 };
 
 const Hero = () => {
-  // Array of images for carousel
+
   const images = [HeroPng, AboutPng, LogoPng, BgPng];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to move to the next image in the array
   const moveToNextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Loop back to the first image when the last image is reached
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); 
   };
 
-  // Set up autoplay interval
   useEffect(() => {
     const interval = setInterval(() => {
       moveToNextImage();
-    }, 3000); // 3 seconds interval for the autoplay
+    }, 3000);
 
-    // Clear interval when the component is unmounted
+  
     return () => clearInterval(interval);
   }, []);
 
@@ -75,10 +73,10 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button className="primary-btn flex items-center gap-2 group">
+             <a href="#enquiry"> <button className="primary-btn flex items-center gap-2 group">
                 Get Started
                 <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
-              </button>
+              </button></a>
             </motion.div>
           </div>
         </div>

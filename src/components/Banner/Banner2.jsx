@@ -24,7 +24,7 @@ const Banner2 = () => {
                     UG, PG, Diploma and B Tech. We are located in multiple cities across India and acts as 
                     the intermediator to keep the pace of rapid development happening in the education sector.
                     </p>
-                    <a href=" " className="primary-btn !mt-8 py-2 px-4 text-sm max-w-[100px] md:max-w-[110px] mx-auto md:mx-0 text-center">
+                    <a href="#enquiry " className="primary-btn !mt-8 py-2 px-4 text-sm max-w-[100px] md:max-w-[110px] mx-auto md:mx-0 text-center">
                         Join Now
                     </a>
                 </motion.div>
