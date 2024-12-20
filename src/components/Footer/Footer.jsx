@@ -1,22 +1,20 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
+import logoImage from "../../assets/treefemme-logo.png";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="py-28 bg-[#e1dada]">
+    <footer id="footer" className="py-28 bg-[#e1dada] relative">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         className="container"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
-
           {/* first section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold font-body">
-              EduMarg
-            </h1>
+            <h1 className="text-2xl font-bold font-body">EduMarg</h1>
             <p className="text-black font-body text-xl">
               Corporate office<br />
               Edu Marg
@@ -31,9 +29,7 @@ const Footer = () => {
           {/* second section */}
           <div className="grid grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold font-body">
-                Lets Chat!
-              </h1>
+              <h1 className="text-2xl font-bold font-body">Lets Chat!</h1>
               <div className="text-black">
                 <ul className="space-y-2 text-lg font-body">
                   <li className="cursor-pointer hover:text-[#7338ac] duration-200">
@@ -47,23 +43,20 @@ const Footer = () => {
             </div>
             <div>
               <div className="space-y-4">
-                <h1 className="text-2xl font-bold font-body">
-                  Links
-                </h1>
+                <h1 className="text-2xl font-bold font-body">Links</h1>
                 <div className="text-black">
                   <ul className="space-y-2 text-lg">
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                    <a href="#hero">Home</a>
+                      <a href="#hero">Home</a>
                     </li>
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                    <a href="#about-us">About</a>
+                      <a href="#about-us">About</a>
                     </li>
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
                       <a href="#services">Services</a>
                     </li>
-
                     <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                    <a href="#footer">Contacts</a>
+                      <a href="#footer">Contacts</a>
                     </li>
                   </ul>
                 </div>
@@ -73,9 +66,7 @@ const Footer = () => {
 
           {/* third section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="font-body text-xl font-bold">
-              Get in Touch
-            </h1>
+            <h1 className="font-body text-xl font-bold">Get in Touch</h1>
             <div className="flex items-center">
               <input
                 type="text"
@@ -87,7 +78,7 @@ const Footer = () => {
               </button>
             </div>
 
-            {/* social icons*/}
+            {/* social icons */}
             <div className="flex space-x-6 py-3">
               <a href="#">
                 <FaWhatsapp className="cursor-pointer hover:text-[#7338ac] hover:scale-105 duration-200 text-2xl" />
@@ -102,6 +93,17 @@ const Footer = () => {
           </div>
         </div>
       </motion.div>
+
+      {/* Logo in bottom-right corner */}
+      <div className="absolute bottom-5 right-5">
+        <a href="https://tree.it.com/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={logoImage}
+            alt="Treefemme Logo"
+            className="w-24 h-24 cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+        </a>
+      </div>
     </footer>
   );
 };
