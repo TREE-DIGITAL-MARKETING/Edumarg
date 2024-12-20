@@ -1,5 +1,5 @@
 import React from "react";
-import BannerPng from "../../assets/about.jpg";
+import BannerPng from "../../assets/About.jpg";
 import { LiaAirbnb } from "react-icons/lia";
 import { FadeUp } from "../Hero/Hero"; // Ensure FadeUp is correctly defined
 import { motion } from "framer-motion";
