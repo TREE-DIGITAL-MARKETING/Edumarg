@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Banner2 = () => {
     return (
-        <section id="about-us">  {/* Added id here for smooth scrolling */}
-            <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+        <section id="about-us" className="bg-light"> {/* Added id here for smooth scrolling */}
+            <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0 px-4 sm:px-6 md:px-0"> {/* Added px-4 and sm:px-6 for phone view */}
                 {/* Banner text */}
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
@@ -17,14 +17,14 @@ const Banner2 = () => {
                         About Us
                     </h1>
                     <p className="text-black font-body text-justify">
-                    Edumarg is leading educational consultancy in India to facilitate admission between UGC/AICTE approved Universities 
-                    and aspiring students across India. We have currently partnered with 5+ UGC/AICTE
-                     approved universities to guide and facilitate 
-                    the admission process of student folk who would like to get admission for courses like 
-                    UG, PG, Diploma and B Tech. We are located in multiple cities across India and acts as 
-                    the intermediator to keep the pace of rapid development happening in the education sector.
+                        Edumarg is leading educational consultancy in India to facilitate admission between UGC/AICTE approved Universities 
+                        and aspiring students across India. We have currently partnered with 5+ UGC/AICTE
+                        approved universities to guide and facilitate 
+                        the admission process of student folk who would like to get admission for courses like 
+                        UG, PG, Diploma and B Tech. We are located in multiple cities across India and act as 
+                        the intermediator to keep the pace of rapid development happening in the education sector.
                     </p>
-                    <a href="#enquiry " className="primary-btn !mt-8 py-2 px-4 text-sm max-w-[100px] md:max-w-[110px] mx-auto md:mx-0 text-center">
+                    <a href="#enquiry" className="primary-btn !mt-8 py-2 px-4 text-sm max-w-[100px] md:max-w-[110px] mx-auto md:mx-0 text-center">
                         Join Now
                     </a>
                 </motion.div>

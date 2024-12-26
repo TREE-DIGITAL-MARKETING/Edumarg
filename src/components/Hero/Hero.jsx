@@ -47,12 +47,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="bg-light dark:bg-black overflow-hidden relative">
+    <section id="hero" className="bg-light overflow-hidden relative">
       <Navbar />
 
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         {/* Brand Info */}
-        <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
+        <div className="flex flex-col justify-center py-14 md:py-0 relative z-20 -mt-36">
           <div className="text-center md:text-left space-y-10 lg:max-w-[400px]">
             <motion.h1
               variants={FadeUp(0.6)}
@@ -62,7 +62,7 @@ const Hero = () => {
             >
               Ignite Your <span className="text-secondary">Learning</span>
               &nbsp;Journey with the perfect partner
-              <p className="font-body text-lg lg:text-lg whitespace-nowrap">
+              <p className="font-body text-sm lg:text-lg whitespace-nowrap">
                 Guiding your minds to begin your educational journey
               </p>
             </motion.h1>

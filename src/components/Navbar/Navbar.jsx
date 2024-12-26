@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-20">
+    <nav className="relative z-50">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -92,12 +92,7 @@ const Navbar = () => {
       <div
         className={`lg:hidden absolute top-0 right-0 w-[100%] bg-white text-black transition-transform duration-300 ease-in-out ${isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"}`}
       >
-        <div className="absolute top-4 left-4">
-          <IoMdClose
-            className="text-lg cursor-pointer"
-            onClick={toggleMenu}
-          />
-        </div>
+       
 
         <ul className="flex items-center justify-around py-4 space-x-6">
           {NavbarMenu.map((menu) => (
