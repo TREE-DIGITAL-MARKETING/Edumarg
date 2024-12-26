@@ -47,7 +47,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="bg-light dark:bg-black overflow-hidden relative">
+    <section id="hero" className="bg-light overflow-hidden relative">
       <Navbar />
 
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
