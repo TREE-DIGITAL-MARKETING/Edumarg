@@ -82,37 +82,39 @@ const Hero = () => {
         </div>
 
         {/* Image Carousel with Slide Transition */}
-        <div className="flex justify-center items-center relative w-full h-full overflow-hidden">
-          <div className="relative w-full h-full flex">
-            {/* Current image (slides to left) */}
-            <motion.img
-              key={currentIndex} // Ensures each image has a unique key
-              src={images[currentIndex]} // Dynamically change image based on current index
-              alt={`carousel-${currentIndex}`}
-              className="absolute w-full h-full object-cover"
-              initial={{ x: 0 }} // Initially, the current image is in place
-              animate={{ x: "-100%" }} // Move current image to the left
-              transition={{
-                duration: 1, // Duration of sliding transition
-                ease: "easeInOut",
-              }}
-            />
+        {/* Image Carousel with Slide Transition */}
+<div className="flex justify-center items-center relative w-full h-full overflow-hidden">
+  <div className="relative w-full h-full flex">
+    {/* Current image (slides to left) */}
+    <motion.img
+      key={currentIndex} // Ensures each image has a unique key
+      src={images[currentIndex]} // Dynamically change image based on current index
+      alt={`carousel-${currentIndex}`}
+      className="absolute w-full h-full object-cover md:max-h-[500px] lg:max-h-[450px]"
+      initial={{ x: 0 }} // Initially, the current image is in place
+      animate={{ x: "-100%" }} // Move current image to the left
+      transition={{
+        duration: 1, // Duration of sliding transition
+        ease: "easeInOut",
+      }}
+    />
 
-            {/* Next image (slides in from the right) */}
-            <motion.img
-              key={(currentIndex + 1) % images.length} // Next image based on index
-              src={images[(currentIndex + 1) % images.length]} // Dynamically update the next image
-              alt={`carousel-${(currentIndex + 1) % images.length}`}
-              className="absolute w-full h-full object-cover"
-              initial={{ x: "100%" }} // Start from the right side (off-screen)
-              animate={{ x: 0 }} // Slide to its position
-              transition={{
-                duration: 1, // Duration of sliding transition
-                ease: "easeInOut",
-              }}
-            />
-          </div>
-        </div>
+    {/* Next image (slides in from the right) */}
+    <motion.img
+      key={(currentIndex + 1) % images.length} // Next image based on index
+      src={images[(currentIndex + 1) % images.length]} // Dynamically update the next image
+      alt={`carousel-${(currentIndex + 1) % images.length}`}
+      className="absolute w-full h-full object-cover md:max-h-[500px] lg:max-h-[450px]"
+      initial={{ x: "100%" }} // Start from the right side (off-screen)
+      animate={{ x: 0 }} // Slide to its position
+      transition={{
+        duration: 1, // Duration of sliding transition
+        ease: "easeInOut",
+      }}
+    />
+  </div>
+</div>
+
       </div>
     </section>
   );

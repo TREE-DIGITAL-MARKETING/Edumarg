@@ -1,7 +1,6 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
-import logoImage from "../../assets/treefemme-logo.png";
 
 const Footer = () => {
   return (
@@ -12,10 +11,10 @@ const Footer = () => {
         className="container"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
-          {/* first section */}
-          <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold font-body">EduMarg</h1>
-            <p className="text-black font-body text-xl">
+          {/* First Section (EduMarg) */}
+          <div className="space-y-4 max-w-[300px] mx-auto md:mx-0">
+            <h1 className="text-2xl font-bold font-body text-center md:text-left">EduMarg</h1>
+            <p className="text-black font-body text-xl text-center md:text-left">
               Corporate office<br />
               Edu Marg
               53/3942<br />
@@ -26,9 +25,10 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* second section */}
-          <div className="grid grid-cols-2 gap-10">
-            <div className="space-y-4">
+          {/* Second Section (Lets Chat and Links) */}
+          <div className="md:flex md:justify-between sm:text-center sm:max-w-[90%] mx-auto space-y-6 md:space-y-0 md:space-x-6">
+            {/* Let's Chat */}
+            <div className="space-y-4 text-center sm:text-left">
               <h1 className="text-2xl font-bold font-body">Lets Chat!</h1>
               <div className="text-black">
                 <ul className="space-y-2 text-lg font-body">
@@ -41,45 +41,45 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div>
-              <div className="space-y-4">
-                <h1 className="text-2xl font-bold font-body">Links</h1>
-                <div className="text-black">
-                  <ul className="space-y-2 text-lg">
-                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      <a href="#hero">Home</a>
-                    </li>
-                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      <a href="#about-us">About</a>
-                    </li>
-                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      <a href="#services">Services</a>
-                    </li>
-                    <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
-                      <a href="#footer">Contacts</a>
-                    </li>
-                  </ul>
-                </div>
+
+            {/* Links */}
+            <div className="space-y-4 text-center sm:text-left">
+              <h1 className="text-2xl font-bold font-body">Links</h1>
+              <div className="text-black">
+                <ul className="space-y-2 text-lg">
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                    <a href="#hero">Home</a>
+                  </li>
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                    <a href="#about-us">About</a>
+                  </li>
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                    <a href="#services">Services</a>
+                  </li>
+                  <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
+                    <a href="#footer">Contacts</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
-          {/* third section */}
-          <div className="space-y-4 max-w-[300px]">
+          {/* Third Section (Get in Touch) */}
+          <div className="space-y-4 max-w-[300px] mx-auto text-center md:text-left">
             <h1 className="font-body text-xl font-bold">Get in Touch</h1>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center md:justify-start">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="p-3 rounded-s-xl bg-white w-full py-4 focus:ring-0 focus:outline-1 placeholder:text-black "
+                className="p-3 rounded-s-xl bg-white w-full md:w-auto py-4 focus:ring-0 focus:outline-1 placeholder:text-black"
               />
               <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl">
                 go
               </button>
             </div>
 
-            {/* social icons */}
-            <div className="flex space-x-6 py-3">
+            {/* Social Icons */}
+            <div className="flex space-x-6 py-3 justify-center md:justify-start">
               <a href="#">
                 <FaWhatsapp className="cursor-pointer hover:text-[#7338ac] hover:scale-105 duration-200 text-2xl" />
               </a>
@@ -91,18 +91,26 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
         </div>
       </motion.div>
 
-      {/* Logo in bottom-right corner */}
-      <div className="absolute bottom-5 right-5">
-        <a href="https://tree.it.com/" target="_blank" rel="noopener noreferrer">
-          <img
-            src={logoImage}
-            alt="Treefemme Logo"
-            className="w-24 h-24 cursor-pointer hover:scale-110 transition-transform duration-300"
-          />
-        </a>
+      {/* Underline and Footer Text */}
+      <div className="absolute bottom-0 w-full py-4 border-t border-black">
+        <div className="flex justify-between px-4 items-center text-sm text-black">
+          <span className="text-sm  md:text-lg font-body">@2024</span>
+          <a
+            href="https://tree.it.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-sm"
+          >
+            Made by{" "}
+            <span className="hover:text-[#7338ac] font-body text-sm md:text-xl">
+              Tree Femme
+            </span>
+          </a>
+        </div>
       </div>
     </footer>
   );

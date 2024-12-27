@@ -61,7 +61,7 @@ const Subscribe = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="flex flex-col justify-center relative z-10"
         >
-          <div className="text-center space-y-4 lg:max-w-[630px] mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <div className="text-center space-y-4 lg:max-w-[630px] mx-auto bg-white p-8 rounded-lg shadow-lg border-l-4 border-r-4 border-gray-300">
             <h1 className="text-4xl font-bold font-body !leading-snug">Enquiry Form</h1>
             <p className="mb-8 font-body">Please fill out the form below to inquire about our courses.</p>
 
@@ -78,7 +78,7 @@ const Subscribe = () => {
                   <input
                     type="number"
                     className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md font-body text-sm"
-                    placeholder="Enter your age"required
+                    placeholder="Enter your age" required
                   />
                 </div>
               </div>
@@ -87,14 +87,14 @@ const Subscribe = () => {
                   <input
                     type="tel"
                     className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md font-body text-sm"
-                    placeholder="Enter your phone number"required
+                    placeholder="Enter your phone number" required
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md font-body text-sm"
-                    placeholder="Enter your email address"required
+                    placeholder="Enter your email address" required
                   />
                 </div>
               </div>
@@ -103,7 +103,7 @@ const Subscribe = () => {
                   <input
                     type="text"
                     className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md font-body text-sm"
-                    placeholder="Enter your qualification"required
+                    placeholder="Enter your qualification" required
                   />
                 </div>
                 <div>

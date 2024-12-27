@@ -71,30 +71,31 @@ const SlideLeft = (delay) => {
         }
     };
 }
-
 const Services = () => {
     return (
         <section id="services" className="bg-white">
             <div className="container pb-14 pt-16">
-                <h1 className="text-4xl font-bold text-left pb-10 font-body">Services we provide</h1>
+                <h1 className="text-4xl font-bold pb-10 font-body text-center md:text-left">
+                    Services we provide
+                </h1>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
-                    {
-                        ServicesData.map((Service) => (
-                            <motion.div
-                                key={Service.id} // Added a unique key
-                                variants={SlideLeft(Service.delay)} // corrected from 'service.delay' to 'Service.delay'
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{ once: true }}
-                                className="bg-[#635ad9] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7
-                                 hover:bg-[#88f4ff] hover:text-[black] text-[white] hover:scale-110 duration-300 hover:shadow-2xl"
-                            >
-                                <div className="text-4xl mb-4">{Service.icon}</div>
-                                <h1 className="text-lg font-semibold text-center px-3 font-body">{Service.title}</h1>
-                            </motion.div>
-                        ))
-                    }
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-4 gap-x-2 sm:gap-y-6 sm:gap-x-4 px-4 sm:px-8">
+                    {ServicesData.map((Service) => (
+                        <motion.div
+                            key={Service.id}
+                            variants={SlideLeft(Service.delay)}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true }}
+                            className="bg-[#635ad9] rounded-xl flex flex-col gap-3 items-center justify-center px-4 py-6
+                              hover:bg-[#88f4ff] hover:text-black text-white hover:scale-105 duration-300 hover:shadow-2xl"
+                        >
+                            <div className="text-5xl mb-3">{Service.icon}</div>
+                            <h1 className="text-base sm:text-lg font-semibold text-center px-2 sm:px-3 font-body">
+                                {Service.title}
+                            </h1>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>
