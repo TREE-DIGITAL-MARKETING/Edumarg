@@ -11,12 +11,12 @@ const Banner2 = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    className="flex flex-col justify-center text-center md:text-left space-y-4 lg-max-w-[450px]"
+                    className="flex flex-col justify-center text-center md:text-left space-y-4 lg-max-w-[450px] md:mr-8"
                 >
-                    <h1 className="text-4xl font-bold !leading-snug font-body">
+                    <h1 className="md:text-4xl text-xl font-bold !leading-snug font-body">
                         About Us
                     </h1>
-                    <p className="text-black font-body text-justify">
+                    <p className="text-black font-body text-justify md:text-lg text-xs">
                         Edumarg is leading educational consultancy in India to facilitate admission between UGC/AICTE approved Universities 
                         and aspiring students across India. We have currently partnered with 5+ UGC/AICTE
                         approved universities to guide and facilitate 
