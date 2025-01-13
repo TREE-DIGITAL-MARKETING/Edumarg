@@ -62,8 +62,8 @@ const Subscribe = () => {
           className="flex flex-col justify-center relative z-10"
         >
           <div className="text-center space-y-4 lg:max-w-[630px] mx-auto bg-white p-8 rounded-lg shadow-lg border-l-4 border-r-4 border-gray-300">
-            <h1 className="text-4xl font-bold font-body !leading-snug">Enquiry Form</h1>
-            <p className="mb-8 font-body">Please fill out the form below to inquire about our courses.</p>
+            <h1 className="text-xl md:text-4xl font-bold font-body !leading-snug">Enquiry Form</h1>
+            <p className="mb-8 font-body text-sm md:text-lg">Please fill out the form below to inquire about our courses.</p>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -117,7 +117,7 @@ const Subscribe = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="primary-btn !mt-8 inline-flex items-center gap-4 group font-body"
+                  className="primary-btn !mt-8 inline-flex items-center gap-4 group font-body text-sm"
                 >
                   Submit Enquiry
                   <AiFillBank className="group-hover:animate-bounce group-hover:text-lg duration-200" />

@@ -29,7 +29,7 @@ const Banner = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
-                            className="text-3xl md:text-4xl font-bold font-body !leading-snug px-4 sm:px-6 md:px-0"
+                            className="text-xl md:text-4xl font-bold font-body !leading-snug px-4 sm:px-6 md:px-0"
                         >
                             Empowering Future: Our
                         </motion.h1>
@@ -43,8 +43,8 @@ const Banner = () => {
                                 className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] text-[white] duration-300 hover:shadow-2xl"
                                 style={{ borderLeft: "6px solid #fffff", borderRight: "6px solid #ffffff" }}
                             >
-                                <p className="text-lg font-body text-white sm:text-base md:text-lg">
-                                    <span className="text-xl font-semibold">Mission:</span> We aim to bridge the gap between
+                                <p className="text-sm font-body text-white sm:text-base md:text-lg">
+                                    <span className="text-sm font-semibold md:text-lg">Mission:</span> We aim to bridge the gap between
                                     aspiring students and prestigious universities.
                                 </p>
                             </motion.div>
@@ -52,13 +52,13 @@ const Banner = () => {
                             <motion.div
                                 variants={FadeUp(0.4)}
                                 initial="initial"
-                                whileInView="animate"
+                                whileInView="animate" 
                                 viewport={{ once: true }}
                                 className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] hover:text-[white] duration-300 hover:shadow-2xl"
                                 style={{ borderLeft: "6px solid #ffffff", borderRight: "6px solid #ffffff" }}
                             >
-                                <p className="text-lg font-body text-white">
-                                    <span className="text-xl font-semibold">Vision:</span> Edumarg aims to be India's leading educational consultancy, promoting a culture of continuous learning and excellence.
+                                <p className="text-sm md:text-lg font-body text-white">
+                                    <span className="text-sm font-semibold md:text-lg">Vision:</span > Edumarg aims to be India's leading educational consultancy, promoting a culture of continuous learning and excellence.
                                 </p>
                             </motion.div>
 
@@ -70,8 +70,8 @@ const Banner = () => {
                                 className="flex items-center gap-4 p-6 bg-[#635ad9] rounded-2xl hover:bg-[#219be4] hover:text-[white] duration-300 hover:shadow-2xl"
                                 style={{ borderLeft: "6px solid #ffffff", borderRight: "6px solid #ffffff" }}
                             >
-                                <p className="text-lg font-body text-white">
-                                    <span className="text-xl font-semibold">Motto:</span> To provide personalised services
+                                <p className="text-sm  md:text-lg font-body text-white">
+                                    <span className="text-sm md:text-lg font-semibold">Motto:</span> To provide personalised services
                                     and guidance to students for a hassle-free academic pursuit.
                                 </p>
                             </motion.div>

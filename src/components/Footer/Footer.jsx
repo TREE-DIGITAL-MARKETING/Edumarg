@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           {/* First Section (EduMarg) */}
           <div className="space-y-4 max-w-[300px] mx-auto md:mx-0">
-            <h1 className="text-2xl font-bold font-body text-center md:text-left">EduMarg</h1>
+            <h1 className="text-xl  font-bold font-body text-center md:text-left">EduMarg</h1>
             <p className="text-black font-body text-xl text-center md:text-left">
               Corporate office<br />
               Edu Marg
