@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { PiCopyright } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           {/* First Section (EduMarg) */}
           <div className="space-y-4 max-w-[300px] mx-auto md:mx-0">
-            <h1 className="text-xl  font-bold font-body text-center md:text-left">EduMarg</h1>
+            <h1 className="text-xl font-bold font-body text-center md:text-left">EduMarg</h1>
             <p className="text-black font-body text-xl text-center md:text-left">
               Corporate office<br />
               Edu Marg
@@ -97,17 +98,16 @@ const Footer = () => {
 
       {/* Underline and Footer Text */}
       <div className="absolute bottom-0 w-full py-4 border-t border-black">
-        <div className="flex justify-between px-4 items-center text-sm text-black">
-          <span className="text-sm  md:text-lg font-body">@2024</span>
+        <div className="flex justify-center items-center text-sm text-black">
           <a
             href="https://tree.it.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-sm"
           >
-            Made by{" "}
+            <PiCopyright className="inline-block text-xl" />{" "}
             <span className="hover:text-[#7338ac] font-body text-sm md:text-xl">
-              Tree Femme
+              Tree Femme 2024
             </span>
           </a>
         </div>
