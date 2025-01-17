@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           {/* First Section (EduMarg) */}
           <div className="space-y-4 max-w-[300px] mx-auto md:mx-0">
-            <h1 className="text-xl font-bold font-body text-center md:text-left">EduMarg</h1>
-            <p className="text-black font-body text-xl text-center md:text-left">
+            <h1 className="text-lg font-bold font-body text-center md:text-left">EduMarg</h1>
+            <p className="text-black font-body text-sm text-center md:text-left">
               Corporate office<br />
               Edu Marg
               53/3942<br />
@@ -30,9 +30,9 @@ const Footer = () => {
           <div className="md:flex md:justify-between sm:text-center sm:max-w-[90%] mx-auto space-y-6 md:space-y-0 md:space-x-6">
             {/* Let's Chat */}
             <div className="space-y-4 text-center sm:text-left">
-              <h1 className="text-2xl font-bold font-body">Lets Chat!</h1>
+              <h1 className="text-lg md:text-xl font-bold font-body">Lets Chat!</h1>
               <div className="text-black">
-                <ul className="space-y-2 text-lg font-body">
+                <ul className="space-y-2 text-sm md:text-xl font-body">
                   <li className="cursor-pointer hover:text-[#7338ac] duration-200">
                     Contact number: <br /> 9207115870
                   </li>
@@ -45,9 +45,9 @@ const Footer = () => {
 
             {/* Links */}
             <div className="space-y-4 text-center sm:text-left">
-              <h1 className="text-2xl font-bold font-body">Links</h1>
+              <h1 className="text-lg md:text-xl font-bold font-body">Links</h1>
               <div className="text-black">
-                <ul className="space-y-2 text-lg">
+                <ul className="space-y-2 text-sm md:text-xl">
                   <li className="cursor-pointer hover:text-[#7338ac] duration-200 font-body">
                     <a href="#hero">Home</a>
                   </li>
@@ -67,7 +67,7 @@ const Footer = () => {
 
           {/* Third Section (Get in Touch) */}
           <div className="space-y-4 max-w-[300px] mx-auto text-center md:text-left">
-            <h1 className="font-body text-xl font-bold">Get in Touch</h1>
+            <h1 className="font-body text-lg md:text-xl font-bold">Get in Touch</h1>
             <div className="flex items-center justify-center md:justify-start">
               <input
                 type="text"

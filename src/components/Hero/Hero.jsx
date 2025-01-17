@@ -62,7 +62,7 @@ const Hero = () => {
             >
               Ignite Your <span className="text-secondary">Learning</span>
               &nbsp;Journey with the perfect partner
-              <p className="font-body text-sm lg:text-lg whitespace-nowrap">
+              <p className="font-body text-xs lg:text-lg whitespace-nowrap">
                 Guiding your minds to begin your educational journey
               </p>
             </motion.h1>

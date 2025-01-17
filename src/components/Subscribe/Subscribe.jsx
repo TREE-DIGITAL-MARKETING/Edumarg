@@ -51,7 +51,7 @@ const Subscribe = () => {
         initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
         style={bgStyle}
-        className="container py-24 md:py-48 relative"
+        className="container py-0 md:py-48 relative"
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
 
