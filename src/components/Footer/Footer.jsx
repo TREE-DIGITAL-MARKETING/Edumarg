@@ -106,10 +106,12 @@ const Footer = () => {
             className="font-body text-sm"
           >
             <PiCopyright className="inline-block text-xl" />{" "}
-            <span className="hover:text-[#7338ac] font-body text-sm md:text-xl">
-              Tree Femme 2024
-            </span>
-          </a>
+            <span className="hover:text-[#4056d3] text-blue-900 font-body text-sm md:text-xl pr-4">
+  tree femme
+</span>
+</a>
+<span className="font-body text-sm md:text-xl">EduMerg 2025</span>
+
         </div>
       </div>
     </footer>
